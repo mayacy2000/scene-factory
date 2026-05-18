@@ -1,0 +1,48 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+*.egg
+
+# Environment
+.env
+.env.*
+
+# Database (runtime data — not source)
+*.db
+*.db-shm
+*.db-wal
+
+# Xcode
+*.xcworkspace/
+xcuserdata/
+*.xcuserstate
+DerivedData/
+*.ipa
+*.dSYM.zip
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Scene Factory runtime output (large generated files)
+SceneFactory/Projects/
+SceneFactory/
+
+# PDF spec (large binary)
+AI_Video_Production_Station_Build_Instructions.pdf

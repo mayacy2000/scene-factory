@@ -1,0 +1,41 @@
+name: SceneFactory
+options:
+  bundleIdPrefix: com.scenefactory
+  deploymentTarget:
+    macOS: "14.0"
+  xcodeVersion: "15"
+  createIntermediateGroups: true
+
+settings:
+  SWIFT_VERSION: "5.9"
+
+targets:
+  SceneFactory:
+    type: application
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: .
+        excludes:
+          - "project.yml"
+    info:
+      path: Info.plist
+      properties:
+        CFBundleDisplayName: Scene Factory
+        CFBundleShortVersionString: "0.1.0"
+        CFBundleVersion: "1"
+        NSHumanReadableCopyright: ""
+        LSMinimumSystemVersion: "$(MACOSX_DEPLOYMENT_TARGET)"
+        NSPrincipalClass: NSApplication
+    entitlements:
+      path: SceneFactory.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.network.client: true
+        com.apple.security.files.user-selected.read-write: true
+        com.apple.security.files.downloads.read-write: true
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.scenefactory.app
+      MARKETING_VERSION: "0.1.0"
+      CURRENT_PROJECT_VERSION: "1"
+      ENABLE_HARDENED_RUNTIME: YES
